@@ -1,0 +1,43 @@
+1. Student Data Entry Template (Excel/Word Table)
+Student ID	Name	Age	Gender	Course	Email	Phone	Address
+2. Simple HTML Student Data Entry Form
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Data Entry</title>
+</head>
+<body>
+  <h2>Student Data Entry Form</h2>
+  <form>
+    Student ID: <input type="text" name="student_id"><br><br>
+    Name: <input type="text" name="name"><br><br>
+    Age: <input type="number" name="age"><br><br>
+    Gender: 
+    <select name="gender">
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select><br><br>
+    Course: <input type="text" name="course"><br><br>
+    Email: <input type="email" name="email"><br><br>
+    Phone: <input type="text" name="phone"><br><br>
+    Address: <textarea name="address"></textarea><br><br>
+    <input type="submit" value="Save">
+  </form>
+</body>
+</html>
+
+3. SQL Table for Student Data
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Age INT,
+    Gender VARCHAR(10),
+    Course VARCHAR(50),
+    Email VARCHAR(100),
+    Phone VARCHAR(15),
+    Address TEXT
+);
+
+
+👉 Do you want me to prepare a ready-to-use Excel/Word format, or a form/database code for student data entry?
